@@ -1,0 +1,17 @@
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/Roboto-Regular.ttf");
+    font-weight: 400;
+}
+@font-face {
+    font-family: "NicoMoji";
+    src: url("../fonts/NicoMoji-Regular.ttf");
+}
+@font-face {
+    font-family: "Arodora-Pro";
+    src: url("../fonts/ArodoraPro-Light.otf");
+}
+@font-face {
+    font-family: "NEXT-ART";
+    src: url("../fonts/NEXTARTLight.ttf");
+}
