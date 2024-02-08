@@ -1,31 +1,15 @@
 <template>
   <section class="header__content" id="#home">
-    <div class="container">
+    <div class=" header__content-container container">
         <div class="header__content-info">
             <p class="hello">Hello</p>
             <p class="name">I'M SHAHBOZ</p>
             <p class="header__content-descr">I've been doing web design, front-end and back-end development for a year now. Do you need a website design, site layout, or maybe a turnkey website? Then contact me</p>
             <button class="header__content-btn">CONTACT ME</button>
         </div>
-        <div class="header__content-avatar">
-            <div class="avatar-ellipse">
-                <img src="../assets/images/ellipse.png" alt="">
-            </div>
-            <img src="../assets/images/avatar.png" alt="" class="avatar-img">
-            <img src="../assets/images/avatar-head.png" alt="" class="avatar-head">
-            <div class="avatar-item-ellipse item1">
-                <span class="ellipse-component">UI</span>
-            </div>
-            <div class="avatar-item-ellipse item2">
-                <span class="ellipse-component">&lt;/</span>
-            </div>
-            <div class="avatar-item-ellipse item3">
-                <span class="ellipse-component">UX</span>
-            </div>
-            <div class="avatar-item-ellipse item4">
-                <span class="ellipse-component">PS</span>
-            </div>            
+        <div class="avatar-img">
         </div>
+         
     </div>
   </section>
 </template>
@@ -37,17 +21,30 @@ export default {
 </script>
 
 <style scooped>
+    @media (max-width:991.99px){
+        .hello{
+            font-size: 30px !important;
+        }
+        .name{
+            font-size:50px !important;
+        }
+        .header__content-btn{
+            font-size: 12px !important;
+            padding: 10px 25px !important;
+        }
+    }
+    .avatar-img{
+        background: url("../assets/images/avatar-img.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 500px;
+        height: 400px;
+        margin-bottom: 40px;
+    }
     .header__content{
         background: var(--bg1, linear-gradient(102deg, #2C2C2C 1.56%, #1C1C1C 95.55%));
-        margin-top: -60px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
         overflow: x;
-    }
-    .container{
-        display: flex;
-        justify-content: space-between;
     }
     .header__content-info{
         display: flex;
@@ -56,7 +53,6 @@ export default {
         align-items: flex-start;
         max-width: 447px;
         gap: 27px;
-        margin-top: -80px;
     }
     .hello{
         color: var(--text, #E4E4E4);
@@ -89,56 +85,9 @@ export default {
         font-weight: 700;
         padding: 14px 38px;
     }
-    .avatar-ellipse{
-        max-width: 675px;
-        position: relative;
-    }
-    .avatar-img{
-        position: absolute;
-        bottom: -30px;
-        right: 153px;
-        object-fit: contain;
-    }
-    .avatar-head{
-        position: absolute;
-        top: 76px;
-        right: 240px;
-        transform: rotate(-6.566deg);
-    }
-    .ellipse-component{
-        color: #00C4F0;
-        font-family: NEXT-ART;
-        font-size: 36px;
-        font-weight: bold;
-        line-height: normal;
-    }
-    .avatar-item-ellipse{
+    .header__content-container{
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
-        width: 90px;
-        height: 90px;
-        background: var(--Gray2, linear-gradient(131deg, #414141 0%, #2D2D2D 100.52%));
-        border-radius: 50%;
-    }
-    .item1{
-        position: absolute;
-        top: 180px;
-        right: 175px;
-    }
-    .item2{
-        position: absolute;
-        top: 250px;
-        right: 600px;
-    }
-    .item3{
-        position: absolute;
-        top:425px;
-        right: 640px;
-    }
-    .item4{
-        position: absolute;
-        top: 590px;
-        right: 590px;
     }
 </style>

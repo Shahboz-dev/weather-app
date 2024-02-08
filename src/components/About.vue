@@ -1,16 +1,18 @@
 <template>
   <section id="about" class="about__content">
     <div class="about__content-main container">
-        <h1 class="about__content-title">ABOUT ME</h1>
-        <p class="about__content-text">Hello again everyone! So, you already know that my name is Shahboz. A little about myself: student of Presidential School in Gulistan,Uzbekistan, 17 y.o., I love creativity since childhood, I live in Syrdarya, Uzbekistan. Why programming? Everything is elementary - I like it, the profession of the future, thanks to which I can provide myself and fulfill my dream - travel, at the moment I specialize in web design, front-end and back-end development, turnkey websites. Why should you choose me? I approach each order with great responsibility and love, as I want to make a name for myself, exclude plagiarism and negligence, fully study the project, the client and its target audience, work for quality, trying to make an order as quickly and uniquely as possible, taking into account all the edits and wishes.
-By trusting me, you will get the maximum return for your project, save your nerves and time.
-If you are interested in me , you want to know something more or use my services, then I will provide all my contacts below.</p>
-        <img src="../assets/images/about-img1.png" alt="" class="about-img1">
-        <img src="../assets/images/about-img2.png" alt="" class="about-img2">
-        <img src="../assets/images/about-img3.png" alt="" class="about-img3">
-        <img src="../assets/images/White-ellipse.png" alt="" class="white-ellipse">
-        <img src="../assets/images/yellow-ellipse.png" alt="" class="yellow-ellipse">
-        <img src="../assets/images/blue-ellipse.png" alt="" class="blue-ellipse">
+        <div class="about">
+            <h1 class="about__content-title">ABOUT ME</h1>
+            <p class="about__content-text">
+                Hello again everyone! So, you already know that my name is Shahboz. A little about myself: student of Presidential School in Gulistan,Uzbekistan, 17 y.o., I love creativity since childhood, I live in Syrdarya, Uzbekistan. Why programming? Everything is elementary - I like it, the profession of the future, thanks to which I can provide myself and fulfill my dream - travel, at the moment I specialize in web design, front-end and back-end development, turnkey websites. Why should you choose me? I approach each order with great responsibility and love, as I want to make a name for myself, exclude plagiarism and negligence, fully study the project, the client and its target audience, work for quality, trying to make an order as quickly and uniquely as possible, taking into account all the edits and wishes.
+                By trusting me, you will get the maximum return for your project, save your nerves and time.
+                If you are interested in me , you want to know something more or use my services, then I will provide all my contacts below
+            </p>
+            <img src="../assets/images/about-img2.jpg" alt="" class="about-img1">
+            <img src="../assets/images/about-img1.jpg" alt="" class="about-img2">
+            <img src="../assets/images/about-img3.jpg" alt="" class="about-img3">
+        </div>
+        
     </div>
   </section>
 </template>
@@ -22,9 +24,44 @@ export default {
 </script>
 
 <style scooped>
+@media (max-width:1199.99px) {
+    .about-img2{
+        max-width: 250px !important;
+        right: -45% !important;
+    }
+    .about-img1{
+        padding: 14px !important;
+        max-width: 260px !important;
+        object-position: center;
+        object-fit: contain;
+    }
+}
+@media (max-width:991.99px) {
+    .about-img2{
+        right: -45% !important;
+        padding: 20px !important;
+        max-width: 200px !important;
+    }
+    .about-img1{
+        max-width: 220px !important;
+        left: -50% !important;
+        padding: 10px !important;
+    }
+    .about-img3{
+        max-width: 220px !important;
+        padding: 20px !important;
+    }
+   .about__content-text{
+    padding: 40px !important;
+    font-size: 12px;
+    max-width: 370px !important;
+   } 
+}
+    .about{
+        position: relative;
+    }
     .about__content{
         padding-top: 150px;
-        position: relative;
     }
     .about__content-main{
         display: flex;
@@ -39,8 +76,8 @@ export default {
         font-size: 48px;
         font-weight: 400;
         position: absolute;
-        top: 125px;
-        left: 40%;
+        top: -25px;
+        left: 20%;
         z-index: 2;
     }
     .about__content-text{
@@ -58,9 +95,11 @@ export default {
     }
     .about-img1{
         max-width: 272px;
+        min-height: 280px;
+        object-position: center;
         position: absolute;
-        top: 130px;
-        left: 200px;
+        top: 20px;
+        left: -240px;
         padding: 30px;
         background: #2C2C2C;
         border-radius: 14px;
@@ -72,8 +111,8 @@ export default {
         max-width: 300px;
         position: absolute;
         padding: 30px;
-        top: 300px;
-        right: 200px;
+        top: 20%;
+        right: -55%;
         z-index: 1;
     }
     .about-img3{
@@ -82,27 +121,8 @@ export default {
         max-width: 272px;
         position: absolute;
         padding: 30px;
-        bottom: -20px;
-        left: 200px;
+        bottom: -30px;
+        left: -50%;
         z-index: 1;
-    }
-    .white-ellipse{
-        position: absolute;
-        max-width: 780px;
-        top: 130px;
-        left: 0;
-    }
-    .yellow-ellipse{
-        position: absolute;
-        max-width: 356px;
-        top: 70px;
-        right: 220px;
-
-    }
-    .blue-ellipse{
-        position: absolute;
-        bottom: -100px;
-        right: 200px;
-        max-width: 486px;
     }
 </style>

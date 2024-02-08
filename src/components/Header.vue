@@ -26,6 +26,21 @@
 </script>
 
 <style>
+@media (max-width:1199.99px) {
+  .nav-list{
+    gap: 50px !important;
+  }
+}
+@media (max-width:991.99px){
+  .nav-list{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 0 !important;
+    gap: 30px !important;
+    flex-direction: column;
+  }
+}
   .li{
     cursor: pointer;
     z-index: 3;
@@ -33,6 +48,7 @@
 .header{
   background: var(--bg1, linear-gradient(102deg, #2C2C2C 1.56%, #1C1C1C 95.55%));
   padding: 20px 0;
+  position: relative;
 }
 .logo{
   display: flex;

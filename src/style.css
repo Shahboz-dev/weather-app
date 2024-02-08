@@ -1,4 +1,5 @@
 @import url(".//assets/style/font.css");
+@import url('./assets/style/media.css');
 
 *{
   margin: 0;

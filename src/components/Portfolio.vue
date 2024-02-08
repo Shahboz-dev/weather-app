@@ -33,15 +33,15 @@ export default {
             Active:1,
             data:{
                 header: [
-                    "Project1",
-                    "Project2",
-                    "Project3",
+                    "VUE Weather",
+                    "Burgers",
+                    "NurEdu",
                 ],
                 descr:[
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut orci eu elit consequat posuere ut sed elit. Nulla et tristique felis. Morbi quis orci non purus blandit fringilla. Etiam et mollis eros. Duis venenatis vulputate lacus, non tristique eros placerat vel. Nam nec magna lacus. Etiam euismod egestas mauris nec mollis. Phasellus efficitur et ex vel condimentum. Cras enim purus, tempor sed massa vel, accumsan bibendum magna. Nullam hendrerit cursus purus, sit amet viverra arcu gravida vel.",
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut orci eu elit consequat posuere ut sed elit. Nulla et tristique felis. Morbi quis orci non purus blandit fringilla. Etiam et mollis eros. Duis venenatis vulputate lacus, non tristique eros placerat vel. Nam nec magna lacus. Etiam euismod egestas mauris nec mollis. Phasellus efficitur et ex vel condimentum. Cras enim purus, tempor sed massa vel, accumsan bibendum magna. Nullam hendrerit cursus purus, sit amet viverra arcu gravida vel.",
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut orci eu elit consequat posuere ut sed elit. Nulla et tristique felis. Morbi quis orci non purus blandit fringilla. Etiam et mollis eros. Duis venenatis vulputate lacus, non tristique eros placerat vel. Nam nec magna lacus. Etiam euismod egestas mauris nec mollis. Phasellus efficitur et ex vel condimentum. Cras enim purus, tempor sed massa vel, accumsan bibendum magna. Nullam hendrerit cursus purus, sit amet viverra arcu gravida vel.",
-                ]
+                    "This application was developed when I only started my journey into VUE. It uses weather API to get the data about all the regions on the Earth, so you can litteraly know the weather forecast for any territory on the planet. You can search the territory using search bar on the top right corner of the page and by pressing ENTER , you can see the weekly forecast for that region",
+                    "Project Burgers was developed using Angular. It fetches different types of burgers using the Burgers-API. You can easily navigate through the web page and dynamicly change the currency. Finally you can order a burger in the footer where all the form validation has been added.",
+                    "NurEdu is a special platform for learners that want to know more about online school NurEducation. In the application I used Flask to develop the backend and also used SQLite3 to store data. You as a user can leave your credentials in the form that will be dynamicly stored in the database",
+                ],
             }
         }
     },
@@ -65,6 +65,17 @@ export default {
 </script>
 
 <style>
+    @media (max-width:1199.99px) {
+        .portfolio-btn{
+            width: 50px !important;
+            height: 50px !important;
+        }
+    }
+    @media (max-width:991.99px) {
+        .portfolio__content-slider{
+            flex-direction: column;
+        }
+    }
     .portfolio__content{
         padding-bottom: 150px;
     }

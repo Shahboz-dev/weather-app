@@ -1,12 +1,14 @@
 <template>
         <div class="slider__content">
-            <img src="../assets/images/project1.png" alt="product" class="project-img" v-if="data.header[i] == 'Project1'">
-            <img src="../assets/images/project2.png" alt="product" class="project-img" v-if="data.header[i] == 'Project2'">
-            <img src="../assets/images/project3.png" alt="product" class="project-img" v-if="data.header[i] == 'Project3'">
+            <img src="../assets/images/project1.jpg" alt="product" class="project-img" v-if="data.header[i] == 'VUE Weather'">
+            <img src="../assets/images/project2.jpg" alt="product" class="project-img" v-if="data.header[i] == 'Burgers'">
+            <img src="../assets/images/project3.jpg" alt="product" class="project-img" v-if="data.header[i] == 'NurEdu'">
             <div class="project__content-info">
                 <h3 class="project-info-header">{{data.header[i]}}</h3>
                 <p class="project-info-text">{{data.descr[i]}}</p>
-                <a href="" class="project-info-demo">View demo</a>
+                <a href="https://github.com/Shahboz-dev/weather-app-2.git" class="project-info-demo" v-if="data.header[i] == 'VUE Weather'">SEE CODE</a>
+                <a href="https://github.com/Shahboz-dev/burgers.git" class="project-info-demo" v-if="data.header[i] == 'Burgers'">SEE CODE</a>
+                <a href="https://github.com/Shahboz-dev/NurEdu.git" class="project-info-demo" v-if="data.header[i] == 'NurEdu'">SEE CODE</a>
             </div>
         </div>
 </template>
@@ -23,6 +25,21 @@ export default {
 </script>
 
 <style>
+    @media (max-width:1199.99px) {
+        .project-img{
+            width: 350px !important;
+            height: 350px !important;
+        }
+        .project-info-text{
+            font-size: 14px !important;
+        }
+        .project-info-header{
+            font-size: 20px !important;
+        }
+        .slider__content{
+            padding: 30px !important;
+        }
+    }
     .project-info-text{
         font-family: Arodora Pro;
         font-size: 18px;
@@ -58,7 +75,10 @@ export default {
     }
     .project-img{
         border-radius: 30px;
-        max-width:500px;
+        width:500px;
+        height: 500px;
+        object-position: left;
+        object-fit: cover;
     }
     .project-info-demo{
         color: orange;

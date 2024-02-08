@@ -47,7 +47,6 @@ export default {
 
 <style scooped>
     .skills__content{
-        margin-top: -155px;
         padding: 113px 100px;
         background: var(--Gray2, linear-gradient(131deg, #414141 0%, #2D2D2D 100.52%));
     }
